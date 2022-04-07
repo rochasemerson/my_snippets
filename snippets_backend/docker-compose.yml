@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  snippet-db:
+    image: postgres:13
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: rochasoemerson
+      POSTGRES_PASSWORD: rainmaker099
+      POSTGRES_DB: nest
+    networks:
+      - freecodecamp
+networks:
+  freecodecamp:
